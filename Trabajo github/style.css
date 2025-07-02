@@ -1,0 +1,241 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    padding-top: 56px; 
+}
+
+.fijo-arriba {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030; 
+}
+
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://via.placeholder.com/1500x800/212529/ffffff?text=Ciberseguridad+Digital') no-repeat center center/cover;
+    height: 60vh;
+    min-height: 400px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-bottom: 5px solid #007bff;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+
+.titulo-seccion {
+    font-weight: 700;
+    color: #007bff;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.titulo-seccion::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    height: 3px;
+    width: 80px;
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+
+.introduccion, .contenido-principal {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.introduccion img, .img-carrusel {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.redondeado-borde {
+    border: 3px solid #007bff;
+}
+
+
+.navbar-nav .nav-link.activo {
+    color: #007bff !important;
+    font-weight: bold;
+    border-bottom: 2px solid #007bff;
+}
+
+
+.tarjeta-amenaza {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.tarjeta-amenaza:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.tarjeta-amenaza .card-img-top {
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.tarjeta-amenaza .card-body {
+    padding: 1.25rem;
+}
+
+.tarjeta-amenaza .card-title {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.tarjeta-amenaza .informacion-adicional {
+    background-color: #e9ecef;
+    padding: 1rem;
+    border-top: 1px solid #dee2e6;
+    display: none; 
+}
+
+.tarjeta-amenaza .ver-mas {
+    width: 100%;
+}
+
+
+#carruselCasos .carousel-item img {
+    height: 500px; 
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#carruselCasos .carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    padding: 10px;
+    bottom: 20px;
+}
+
+
+.acordeon-item {
+    margin-bottom: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.acordeon-header {
+    background-color: #007bff;
+    margin-bottom: 0;
+    border-radius: 8px 8px 0 0;
+}
+
+.acordeon-boton {
+    width: 100%;
+    text-align: left;
+    padding: 1rem 1.25rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px 8px 0 0;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: block; 
+}
+
+.acordeon-boton:not(.colapsado) {
+    background-color: #0056b3; 
+}
+
+.acordeon-boton:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.acordeon-cuerpo {
+    padding: 1.25rem;
+    background-color: #f0f8ff;
+    border-top: 1px solid #dee2e6;
+    border-radius: 0 0 8px 8px;
+}
+
+
+.borde-formulario {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    background-color: #ffffff;
+}
+
+
+#modalTestSeguridad .modal-content {
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+#modalTestSeguridad .modal-header {
+    background-color: #007bff;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#modalTestSeguridad .modal-header .btn-close {
+    filter: invert(1);
+}
+
+#resultadosTest {
+    font-weight: bold;
+}
+
+
+footer {
+    border-top: 3px solid #007bff;
+}
+
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    #carruselCasos .carousel-item img {
+        height: 300px;
+    }
+
+    .acordeon-boton {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
